@@ -44,7 +44,7 @@ jobs:
       - uses: mr-smithers-excellent/docker-build-push@v6
         name: Build & push Docker image
         with:
-          image: meta8686/meta-artifact-repo
+          image: meta8686/maven-docker-test
           tags: v1, latest
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
